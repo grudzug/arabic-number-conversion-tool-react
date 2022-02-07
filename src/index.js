@@ -1,13 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import './styles/index.css'
 import App from './App'
 import ResultContextProvider from "./contexts/ResultContext"
+import AnimateContextProvider from "./contexts/AnimateContext"
 import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
     <ResultContextProvider>
-      <App />
+      <AnimateContextProvider>
+        <App />
+      </AnimateContextProvider>
     </ResultContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
