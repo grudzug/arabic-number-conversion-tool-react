@@ -85,15 +85,17 @@ $dark-color: #000000;
             letter-spacing: 0.02rem;
             padding: .7rem 2rem;
             cursor: pointer;
-            background: $light-color;
+            background-color: $light-color;
             border-radius: .4rem;
             border: .2rem solid $dark-color;
             border-bottom: .3rem solid $dark-color;
             transition: all .6s ease;
 
             &:hover {
-                color: $light-color;
-                background-color: $dark-color;
+                @media (hover: hover) and (pointer: fine) {
+                    color: $light-color;
+                    background-color: $dark-color;
+                }
             }
 
             &:active {

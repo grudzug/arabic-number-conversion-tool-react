@@ -101,7 +101,7 @@
   letter-spacing: 0.02rem;
   padding: .7rem 2rem;
   cursor: pointer;
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: .4rem;
   border: 0.2rem solid #000000;
   border-bottom: 0.3rem solid #000000;
@@ -109,9 +109,11 @@
   transition: all .6s ease;
 }
 
-.converter-container form button:hover {
-  color: #ffffff;
-  background-color: #000000;
+@media (hover: hover) and (pointer: fine) {
+  .converter-container form button:hover {
+    color: #ffffff;
+    background-color: #000000;
+  }
 }
 
 .converter-container form button:active {
